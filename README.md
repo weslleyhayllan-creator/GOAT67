@@ -1,19 +1,21 @@
-# Jornal do Trabalho — Projeto escolar (CLT e SST)
+# Jornal do Trabalho — Versão final com redesign
 
-Versão aprimorada: magazine cover, visual mais atraente, modos claro/escuro, cards interativos e quiz educativo.
+Alterações aplicadas:
+- Hero full-width estilo capa de revista com parallax e grande manchete.
+- Spotlight (matéria em destaque) adicionada.
+- Cards com efeito 3D/tilt ao mover o mouse e animação de reveal.
+- Modal com informações rápidas em cada card e quiz interativo.
+- Tema claro/escuro com persistência (localStorage).
+- Maior contraste, tipografia revista (Playfair Display + Inter) e animações sutis.
 
 Arquivos
-- index.html — página principal (atualizada com modais e quiz)
-- styles.css — estilos (tema claro/escuro, tipografia, magazine layout)
-- script.js — interações (modal, quiz, dark mode, mobile menu)
+- index.html — nova estrutura com hero, spotlight, modals e quiz.
+- styles.css — novo visual, parallax, tilt e dark mode.
+- script.js — parallax, tilt, quiz, theme, modals e melhorias de acessibilidade.
 
-Como usar
-1. Abra index.html no navegador para ver o site localmente.
-2. Para publicar, mantenha os arquivos na branch gh-pages do repositório e verifique Settings → Pages para confirmar que a Source está configurada para gh-pages / root.
+Publicação
+Os arquivos foram enviados para a branch gh-pages. Aguarde alguns minutos para o GitHub Pages atualizar o site em https://weslleyhayllan-creator.github.io/GOAT67/
 
-Personalizar
-- Para preencher Integrantes / Turma / Escola / Professor(a), edite index.html no final da seção "project-info".
-- Para trocar imagens, substitua as URLs por arquivos locais em uma pasta assets/ e atualize o src.
-
-Observações
-- O conteúdo foi mantido fiel aos fatos sobre CLT e SST (1943 como data de publicação, existência de NRs, direitos listados). Para dúvidas ou ajustes de texto, posso alterar sem problema.
+Próximos passos (opcionais)
+- Quero que você revise no navegador e me diga se quer trocar imagens (envie fotos) ou preencho os nomes dos integrantes.
+- Posso gerar PDF para impressão ou criar uma versão multilíngue.
