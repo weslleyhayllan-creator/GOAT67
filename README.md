@@ -1,29 +1,19 @@
 # Jornal do Trabalho — Projeto escolar (CLT e SST)
 
-Descrição
-- Site em HTML/CSS/JS para trabalho escolar sobre a CLT (Consolidação das Leis do Trabalho) e Segurança e Saúde no Trabalho.
-- Visual estilo jornal digital, responsivo e com navegação simples.
+Versão aprimorada: magazine cover, visual mais atraente, modos claro/escuro, cards interativos e quiz educativo.
 
 Arquivos
-- index.html — página principal.
-- styles.css — estilos e layout.
-- script.js — interações (menu, smooth scroll, voltar ao topo).
-- README.md — este arquivo.
+- index.html — página principal (atualizada com modais e quiz)
+- styles.css — estilos (tema claro/escuro, tipografia, magazine layout)
+- script.js — interações (modal, quiz, dark mode, mobile menu)
 
 Como usar
-1. Salve os arquivos em uma pasta.
-2. Abra `index.html` no navegador (duplo clique ou arraste para o navegador).
-3. Para alterar o conteúdo (nomes, turma, escola), edite a seção "Integrantes" no final do `index.html`.
+1. Abra index.html no navegador para ver o site localmente.
+2. Para publicar, mantenha os arquivos na branch gh-pages do repositório e verifique Settings → Pages para confirmar que a Source está configurada para gh-pages / root.
 
-Imagens
-- As imagens usam o serviço Unsplash via URLs de busca (`https://source.unsplash.com/...`) — se preferirem, substituam por imagens locais na pasta `assets/` e atualizem os `src` no HTML.
+Personalizar
+- Para preencher Integrantes / Turma / Escola / Professor(a), edite index.html no final da seção "project-info".
+- Para trocar imagens, substitua as URLs por arquivos locais em uma pasta assets/ e atualize o src.
 
-Fontes oficiais recomendadas (links no site)
-- Ministério do Trabalho e Previdência
-- Portal do Planalto (texto da CLT)
-- Constituição Federal
-- Normas Regulamentadoras (NRs)
-
-Observações importantes
-- O site tem finalidade educativa. Para casos reais de direitos trabalhistas, procure fontes oficiais e orientação profissional (sindicatos, Ministério do Trabalho, advogados).
-- O conteúdo textual foi redigido em linguagem simples e adequada para estudantes do 1º ano do Ensino Médio.
+Observações
+- O conteúdo foi mantido fiel aos fatos sobre CLT e SST (1943 como data de publicação, existência de NRs, direitos listados). Para dúvidas ou ajustes de texto, posso alterar sem problema.
