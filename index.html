@@ -6,216 +6,252 @@
   <title>Jornal do Trabalho — Informação que protege quem trabalha</title>
   <meta name="description" content="Jornal do Trabalho — explicações simples sobre a CLT e Segurança e Saúde no Trabalho (SST). Projeto escolar." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <button id="backToTop" aria-label="Voltar ao topo" title="Voltar ao topo">↑</button>
+  <div class="page">
+    <button id="backToTop" aria-label="Voltar ao topo" title="Voltar ao topo">↑</button>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <h1 class="title">Jornal do Trabalho</h1>
-        <p class="slogan">“Informação que protege quem trabalha”</p>
-      </div>
-
-      <nav class="nav" id="mainNav" aria-label="Menu principal">
-        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="navList">☰</button>
-        <ul id="navList" class="nav-list">
-          <li><a href="#home">Início</a></li>
-          <li><a href="#oque">O que é a CLT?</a></li>
-          <li><a href="#direitos">Principais Direitos</a></li>
-          <li><a href="#sst">CLT e SST</a></li>
-          <li><a href="#porque">Por que conhecer</a></li>
-          <li><a href="#curiosidades">Curiosidades</a></li>
-          <li><a href="#fontes">Fontes</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-left">
-          <h2 class="headline">Você conhece os direitos do trabalhador?</h2>
-          <p class="lead">A CLT reúne as principais regras que protegem quem trabalha no Brasil. Neste jornal digital, explicamos de forma simples e direta o que você precisa saber sobre direitos e segurança no trabalho.</p>
-
-          <div class="hero-meta">
-            <a class="btn primary" href="#direitos">Veja seus direitos</a>
-            <a class="btn ghost" href="#sst">SST &amp; NRs</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="#home" class="logo">
+            <svg width="46" height="46" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+              <rect x="2" y="3" width="20" height="14" rx="2" fill="currentColor" opacity="0.12"></rect>
+              <path d="M4 7h16" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"></path>
+              <path d="M7 16v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+            </svg>
+          </a>
+          <div class="brand-text">
+            <h1 class="title">Jornal do Trabalho</h1>
+            <p class="slogan">“Informação que protege quem trabalha”</p>
           </div>
         </div>
 
-        <div class="hero-right">
-          <figure class="cover">
-            <img src="https://source.unsplash.com/900x600/?work,team,office" alt="Ambiente de trabalho profissional" />
-            <figcaption>Ambiente de trabalho — segurança e respeito</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section id="oque" class="section container">
-      <div class="section-header">
-        <h3>O que é a CLT?</h3>
-        <p class="section-sub">Explicação simples para estudantes.</p>
-      </div>
-      <div class="card simple">
-        <p>A Consolidação das Leis do Trabalho (CLT) é um conjunto de regras que organiza as relações entre trabalhadores e empregadores no Brasil. Foi publicada em 1943 com o objetivo de reunir e padronizar leis trabalhistas, protegendo direitos fundamentais no ambiente de trabalho.</p>
-        <p>A linguagem aqui é simples: a CLT define como devem ser salários, férias, jornada, registro, e também estabelece regras que impactam a segurança e a saúde no trabalho.</p>
-      </div>
-    </section>
-
-    <section id="direitos" class="section container">
-      <div class="section-header">
-        <h3>Principais direitos do trabalhador</h3>
-        <p class="section-sub">Resumo rápido e direto — leia e compartilhe.</p>
-      </div>
-
-      <div class="cards-grid">
-        <article class="card direito">
-          <div class="icon">💵</div>
-          <h4>Salário</h4>
-          <p>Remuneração pelo trabalho prestado. Deve ser combinado no contrato e pago nas datas previstas.</p>
-        </article>
-
-        <article class="card direito">
-          <div class="icon">🏖️</div>
-          <h4>Férias</h4>
-          <p>Período de descanso anual remunerado. É importante para a saúde do trabalhador.</p>
-        </article>
-
-        <article class="card direito">
-          <div class="icon">🎁</div>
-          <h4>13º salário</h4>
-          <p>Pagamento extra anual (conhecido como décimo terceiro) — um direito do trabalhador previsto na legislação.</p>
-        </article>
-
-        <article class="card direito">
-          <div class="icon">⏱️</div>
-          <h4>Jornada de trabalho</h4>
-          <p>Define quantas horas o trabalhador deve cumprir por dia/semana e quando tem direito a hora extra.</p>
-        </article>
-
-        <article class="card direito">
-          <div class="icon">🛌</div>
-          <h4>Descanso</h4>
-          <p>Intervalos durante a jornada e descansos semanais são garantidos para proteger a saúde física e mental.</p>
-        </article>
-
-        <article class="card direito">
-          <div class="icon">🧾</div>
-          <h4>Registro do trabalho</h4>
-          <p>Registro em carteira ou contrato formaliza a relação e garante acesso a benefícios e direitos.</p>
-        </article>
-
-        <article class="card direito destaque">
-          <div class="icon">🦺</div>
-          <h4>Segurança e saúde no trabalho</h4>
-          <p>Regras, equipamentos e treinamentos mínimos para evitar acidentes e doenças ocupacionais.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="sst" class="section alt container">
-      <div class="section-header">
-        <h3>CLT e Segurança do Trabalho (SST)</h3>
-        <p class="section-sub">Como a lei protege a integridade dos trabalhadores.</p>
-      </div>
-
-      <div class="two-cols">
-        <div>
-          <p>A CLT estabelece princípios e regras que apoiam a Segurança e Saúde no Trabalho. Além da CLT existem as Normas Regulamentadoras (NRs), que detalham práticas, equipamentos e obrigações para reduzir riscos no ambiente de trabalho.</p>
-
-          <ul class="bullet-list">
-            <li>Conhecer as regras ajuda a prevenir acidentes.</li>
-            <li>Empresas devem fornecer Equipamentos de Proteção Individual (EPIs) quando necessários.</li>
-            <li>Treinamento e sinalização são medidas previstas para proteger a saúde.</li>
+        <nav class="nav" id="mainNav" aria-label="Menu principal">
+          <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="navList">☰</button>
+          <ul id="navList" class="nav-list">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#oque">O que é a CLT?</a></li>
+            <li><a href="#direitos">Direitos</a></li>
+            <li><a href="#sst">CLT &amp; SST</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+            <li><a href="#fontes">Fontes</a></li>
           </ul>
+        </nav>
+      </div>
+    </header>
 
-          <p>As NRs são publicadas e atualizadas pelo Ministério responsável e descrevem requisitos práticos para diferentes atividades e riscos.</p>
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-left">
+            <div class="kicker">Manchete</div>
+            <h2 class="headline">Você conhece os direitos do trabalhador?</h2>
+            <p class="lead">A CLT reúne regras que protegem quem trabalha no Brasil. Aqui explicamos de forma simples os direitos e como a segurança no trabalho faz parte dessa proteção.</p>
+
+            <div class="hero-actions">
+              <a class="btn primary" href="#direitos">Ver direitos</a>
+              <a class="btn ghost" href="#sst">SST e NRs</a>
+            </div>
+
+            <div class="hero-meta">
+              <span class="meta-item">Projeto escolar • 1º ano EM</span>
+              <span class="meta-item">Formato: Jornal digital</span>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <figure class="cover">
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=0f8000e1d2f5b1c3e4f7d6aef8f9b9e3" alt="Ambiente de trabalho profissional" />
+              <figcaption>Segurança, organização e respeito — pilares do trabalho seguro</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="oque" class="section container">
+        <div class="section-header">
+          <h3>O que é a CLT?</h3>
+          <p class="section-sub">Entenda em palavras simples.</p>
         </div>
 
-        <div>
-          <figure class="sst-figure">
-            <img src="https://source.unsplash.com/720x480/?safety,helmet,construction" alt="EPI - Equipamento de proteção" />
-            <figcaption>EPIs e treinamento ajudam a reduzir acidentes.</figcaption>
-          </figure>
+        <div class="card simple">
+          <p>A Consolidação das Leis do Trabalho (CLT) é um conjunto de normas que organiza as relações entre trabalhadores e empregadores no Brasil. Publicada em 1943, a CLT foi criada para reunir e padronizar as regras trabalhistas, garantindo direitos e proteção no ambiente de trabalho.</p>
+          <p>De forma direta: a CLT define regras sobre salário, férias, jornada, registro, e também trata de medidas que impactam a segurança e a saúde de quem trabalha.</p>
         </div>
-      </div>
+      </section>
 
-      <div class="note">
-        <strong>Importante:</strong> Para informações detalhadas sobre NRs e normas atualizadas, consulte as fontes oficiais listadas na seção "Fontes".
-      </div>
-    </section>
+      <section id="direitos" class="section container">
+        <div class="section-header">
+          <h3>Principais direitos do trabalhador</h3>
+          <p class="section-sub">Resumo visual — rápido e fácil.</p>
+        </div>
 
-    <section id="porque" class="section container">
-      <div class="section-header">
-        <h3>Por que conhecer seus direitos?</h3>
-      </div>
+        <div class="cards-grid">
 
-      <div class="card simple">
-        <p>Informação é proteção. Saber o que a CLT garante ajuda trabalhadores a:</p>
-        <ul>
-          <li>Reconhecer situações inadequadas;</li>
-          <li>Exigir condições seguras;</li>
-          <li>Procurar orientação quando necessário (sindicatos, Ministério do Trabalho, advogados trabalhistas).</li>
+          <article class="card direito">
+            <div class="card-head">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 1v22"></path><path d="M4 7h16v10H4z"></path></svg>
+              </div>
+              <h4>Salário</h4>
+            </div>
+            <p>Remuneração pelo trabalho. Deve ser combinada e paga nas datas previstas — é a garantia de sustento do trabalhador.</p>
+          </article>
+
+          <article class="card direito">
+            <div class="card-head">
+              <div class="icon">🏖️</div>
+              <h4>Férias</h4>
+            </div>
+            <p>Período de descanso anual remunerado, importante para a recuperação da saúde física e mental.</p>
+          </article>
+
+          <article class="card direito">
+            <div class="card-head">
+              <div class="icon">🎁</div>
+              <h4>13º salário</h4>
+            </div>
+            <p>Pagamento extra anual conhecido como décimo terceiro — um direito previsto na legislação.</p>
+          </article>
+
+          <article class="card direito">
+            <div class="card-head">
+              <div class="icon">⏱️</div>
+              <h4>Jornada de trabalho</h4>
+            </div>
+            <p>Define quantas horas por dia/semana o trabalhador deve cumprir e quando há direito a horas extras.</p>
+          </article>
+
+          <article class="card direito">
+            <div class="card-head">
+              <div class="icon">🛌</div>
+              <h4>Descanso</h4>
+            </div>
+            <p>Intervalos durante a jornada e descanso semanal garantem recuperação e proteção à saúde.</p>
+          </article>
+
+          <article class="card direito">
+            <div class="card-head">
+              <div class="icon">🧾</div>
+              <h4>Registro do trabalho</h4>
+            </div>
+            <p>Registro formal (carteira/contrato) garante acesso a benefícios, previdência e outros direitos.</p>
+          </article>
+
+          <article class="card direito destaque">
+            <div class="card-head">
+              <div class="icon">🦺</div>
+              <h4>Segurança e saúde no trabalho</h4>
+            </div>
+            <p>Regras, EPIs e treinamentos para evitar acidentes e doenças ocupacionais — parte essencial da proteção trabalhista.</p>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="sst" class="section alt container">
+        <div class="section-header">
+          <h3>CLT e Segurança do Trabalho (SST)</h3>
+          <p class="section-sub">Como a lei protege quem trabalha.</p>
+        </div>
+
+        <div class="two-cols">
+          <div>
+            <p>A CLT estabelece regras que apoiam a Segurança e Saúde no Trabalho. Além disso, existem as Normas Regulamentadoras (NRs) que detalham práticas, equipamentos e obrigações para reduzir riscos no ambiente de trabalho.</p>
+
+            <ul class="bullet-list">
+              <li>Conhecer as regras ajuda a prevenir acidentes.</li>
+              <li>Empresas devem fornecer Equipamentos de Proteção Individual (EPIs) quando necessários.</li>
+              <li>Treinamento, sinalização e rotina de segurança reduzem riscos e protegem a saúde.</li>
+            </ul>
+
+            <p>As NRs são publicadas e atualizadas pelo órgão responsável e descrevem medidas práticas para diferentes atividades e riscos. Consulte sempre as fontes oficiais.</p>
+          </div>
+
+          <div>
+            <figure class="sst-figure">
+              <img src="https://images.unsplash.com/photo-1581091012184-7b1a3b1f3b29?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b3f6a4a6c9e0c8b6f7c5a9f0e1d2c3b" alt="EPI - Equipamento de proteção" />
+              <figcaption>EPIs e treinamento ajudam a reduzir acidentes.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="note">
+          <strong>Importante:</strong> Para detalhes sobre as NRs e atualizações, consulte as fontes oficiais na seção "Fontes".
+        </div>
+      </section>
+
+      <section id="porque" class="section container">
+        <div class="section-header">
+          <h3>Por que conhecer seus direitos?</h3>
+        </div>
+
+        <div class="card simple">
+          <p>Informação é proteção. Saber o que a CLT garante ajuda trabalhadores a:</p>
+          <ul>
+            <li>Reconhecer situações inadequadas;</li>
+            <li>Exigir condições seguras;</li>
+            <li>Procurar orientação quando necessário (sindicatos, Ministério do Trabalho, advogados trabalhistas).</li>
+          </ul>
+          <p class="impact">Conhecer seus direitos é o primeiro passo para um trabalho mais seguro.</p>
+        </div>
+      </section>
+
+      <section id="curiosidades" class="section alt container">
+        <div class="section-header">
+          <h3>Curiosidades</h3>
+          <p class="section-sub">Fatos interessantes e verdadeiros sobre a CLT.</p>
+        </div>
+
+        <ul class="curios-list">
+          <li><strong>1943:</strong> A CLT foi publicada em 1943 como um texto que reuniu normas trabalhistas existentes em um único conjunto de regras.</li>
+          <li><strong>Dia do Trabalhador:</strong> A publicação ocorreu em 1º de maio de 1943 — data já lembrada como Dia do Trabalho.</li>
+          <li><strong>NRs:</strong> As Normas Regulamentadoras detalham como proteger a saúde e a segurança no trabalho em situações específicas.</li>
         </ul>
-        <p class="impact">Conhecer seus direitos é o primeiro passo para um trabalho mais seguro.</p>
-      </div>
-    </section>
+      </section>
 
-    <section id="curiosidades" class="section alt container">
-      <div class="section-header">
-        <h3>Curiosidades</h3>
-        <p class="section-sub">Fatos interessantes e verdadeiros sobre a CLT.</p>
-      </div>
-
-      <ul class="curios-list">
-        <li><strong>1943:</strong> A CLT foi publicada em 1943 como um texto que reuniu normas trabalhistas existentes em um único conjunto de regras.</li>
-        <li><strong>Dia do Trabalhador:</strong> A publicação ocorreu em 1º de maio de 1943 — data que já é lembrada como Dia do Trabalho.</li>
-        <li><strong>NRs:</strong> As Normas Regulamentadoras detalham como proteger a saúde e a segurança no trabalho em situações específicas.</li>
-      </ul>
-    </section>
-
-    <section id="fontes" class="section container">
-      <div class="section-header">
-        <h3>Fontes confiáveis</h3>
-        <p class="section-sub">Consultadas e recomendadas para estudo e verificação.</p>
-      </div>
-
-      <div class="sources">
-        <ul>
-          <li><a href="https://www.gov.br/trabalho-e-previdencia/pt-br" target="_blank" rel="noopener">Ministério do Trabalho e Previdência</a></li>
-          <li><a href="http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm" target="_blank" rel="noopener">Decreto-Lei nº 5.452/1943 (CLT) — Portal do Planalto</a></li>
-          <li><a href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" rel="noopener">Constituição Federal — Presidência da República (Portal do Planalto)</a></li>
-          <li><a href="https://www.gov.br/trabalho-e-previdencia/pt-br/assuntos/seguranca-e-saude-no-trabalho/normas-regulamentadoras" target="_blank" rel="noopener">Normas Regulamentadoras (NRs) — informações oficiais</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section container final">
-      <div class="final-box">
-        <h3>Conhecer seus direitos também é uma forma de proteção.</h3>
-        <p class="subfinal">Trabalho seguro também é direito.</p>
-
-        <div class="project-info">
-          <p><strong>Integrantes:</strong> __________________________</p>
-          <p><strong>Turma:</strong> __________________________</p>
-          <p><strong>Escola:</strong> __________________________</p>
-          <p><strong>Professor(a):</strong> __________________________</p>
+      <section id="fontes" class="section container">
+        <div class="section-header">
+          <h3>Fontes confiáveis</h3>
+          <p class="section-sub">Consultadas e recomendadas para verificação.</p>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>Jornal do Trabalho — Projeto escolar sobre CLT e Segurança do Trabalho</p>
-      <p>Conteúdo baseado em fontes oficiais. Não substitui orientação jurídica.</p>
-    </div>
-  </footer>
+        <div class="sources">
+          <ul>
+            <li><a href="https://www.gov.br/trabalho-e-previdencia/pt-br" target="_blank" rel="noopener">Ministério do Trabalho e Previdência</a></li>
+            <li><a href="http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm" target="_blank" rel="noopener">Decreto-Lei nº 5.452/1943 (CLT) — Portal do Planalto</a></li>
+            <li><a href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" rel="noopener">Constituição Federal — Portal do Planalto</a></li>
+            <li><a href="https://www.gov.br/trabalho-e-previdencia/pt-br/assuntos/seguranca-e-saude-no-trabalho/normas-regulamentadoras" target="_blank" rel="noopener">Normas Regulamentadoras (NRs)</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section container final">
+        <div class="final-box">
+          <h3>Conhecer seus direitos também é uma forma de proteção.</h3>
+          <p class="subfinal">Trabalho seguro também é direito.</p>
+
+          <div class="project-info">
+            <p><strong>Integrantes:</strong> __________________________</p>
+            <p><strong>Turma:</strong> __________________________</p>
+            <p><strong>Escola:</strong> __________________________</p>
+            <p><strong>Professor(a):</strong> __________________________</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Jornal do Trabalho — Projeto escolar sobre CLT e Segurança do Trabalho</p>
+        <p>Conteúdo baseado em fontes oficiais. Não substitui orientação jurídica.</p>
+      </div>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>

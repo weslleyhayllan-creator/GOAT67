@@ -1,4 +1,4 @@
-// Script simples: menu mobile, smooth scroll, back-to-top
+// Interactions: mobile menu, smooth scroll, back-to-top, reveal animations
 document.addEventListener('DOMContentLoaded', function(){
   const menuToggle = document.getElementById('menuToggle');
   const navList = document.getElementById('navList');
@@ -12,11 +12,12 @@ document.addEventListener('DOMContentLoaded', function(){
   // Smooth scroll for internal links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', (e) => {
-      const target = document.querySelector(a.getAttribute('href'));
+      const href = a.getAttribute('href');
+      if(!href || href === '#') return;
+      const target = document.querySelector(href);
       if(target){
         e.preventDefault();
         target.scrollIntoView({behavior:'smooth', block:'start'});
-        // close mobile menu
         if(navList.classList.contains('show')){
           navList.classList.remove('show');
           menuToggle.setAttribute('aria-expanded','false');
@@ -28,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function(){
   // Back to top
   const backToTop = document.getElementById('backToTop');
   window.addEventListener('scroll', () => {
-    if(window.scrollY > 400){
+    if(window.scrollY > 360){
       backToTop.style.display = 'flex';
     } else {
       backToTop.style.display = 'none';
@@ -38,21 +39,27 @@ document.addEventListener('DOMContentLoaded', function(){
     window.scrollTo({top:0, behavior:'smooth'});
   });
 
-  // Small reveal on scroll (cards)
-  const reveal = (entries, obs) => {
+  // Reveal on scroll
+  const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
-      if(entry.isIntersecting) {
-        entry.target.style.transform = 'translateY(0)';
-        entry.target.style.opacity = '1';
+      if(entry.isIntersecting){
+        entry.target.classList.add('reveal');
         obs.unobserve(entry.target);
       }
     });
-  };
-  const observer = new IntersectionObserver(reveal, {threshold:0.12});
-  document.querySelectorAll('.card').forEach(c => {
-    c.style.transform = 'translateY(18px)';
-    c.style.opacity = '0';
-    c.style.transition = 'all .6s cubic-bezier(.2,.9,.2,1)';
-    observer.observe(c);
+  }, {threshold:0.12});
+
+  document.querySelectorAll('.card, .cover, .final-box').forEach(el => {
+    el.classList.add('pre-reveal');
+    observer.observe(el);
   });
+
+  // Basic accessibility: close mobile menu on Escape
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape' && navList.classList.contains('show')){
+      navList.classList.remove('show');
+      menuToggle.setAttribute('aria-expanded','false');
+    }
+  });
+
 });
