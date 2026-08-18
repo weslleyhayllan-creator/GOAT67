@@ -1,29 +1,29 @@
-Jornal do Trabalho — Projeto (CLT)
+# Jornal do Trabalho — Projeto escolar (CLT e SST)
 
-Este repositório contém um site estático em HTML/CSS/JS criado para um trabalho escolar sobre a CLT (Consolidação das Leis do Trabalho).
+Descrição
+- Site em HTML/CSS/JS para trabalho escolar sobre a CLT (Consolidação das Leis do Trabalho) e Segurança e Saúde no Trabalho.
+- Visual estilo jornal digital, responsivo e com navegação simples.
+
+Arquivos
+- index.html — página principal.
+- styles.css — estilos e layout.
+- script.js — interações (menu, smooth scroll, voltar ao topo).
+- README.md — este arquivo.
 
 Como usar
+1. Salve os arquivos em uma pasta.
+2. Abra `index.html` no navegador (duplo clique ou arraste para o navegador).
+3. Para alterar o conteúdo (nomes, turma, escola), edite a seção "Integrantes" no final do `index.html`.
 
-- Abra o arquivo index.html em um navegador para visualizar localmente.
-- Para publicar no GitHub Pages, ative o Pages nas configurações do repositório e selecione a branch `main`.
+Imagens
+- As imagens usam o serviço Unsplash via URLs de busca (`https://source.unsplash.com/...`) — se preferirem, substituam por imagens locais na pasta `assets/` e atualizem os `src` no HTML.
 
-Conteúdo
+Fontes oficiais recomendadas (links no site)
+- Ministério do Trabalho e Previdência
+- Portal do Planalto (texto da CLT)
+- Constituição Federal
+- Normas Regulamentadoras (NRs)
 
-- index.html — página principal do site
-- css/styles.css — estilos
-- js/script.js — funcionalidades interativas leves
-
-Edição
-
-- Substitua os espaços em branco no final da página (Informações do trabalho) com os nomes dos integrantes, turma, escola e professor(a).
-- As fontes oficiais são linkadas na seção "Fontes" do site. Sempre confira as páginas oficiais para atualizações.
-
-Fontes oficiais utilizadas no site:
-- https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm
-- https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/seguranca-e-saude-no-trabalho/seguranca-e-saude-no-trabalho-normas-regulamentadoras
-- https://www.gov.br/trabalho-e-emprego
-- https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
-
-Licença
-
-Conteúdo criado para fins educacionais. Sinta-se livre para modificar.
+Observações importantes
+- O site tem finalidade educativa. Para casos reais de direitos trabalhistas, procure fontes oficiais e orientação profissional (sindicatos, Ministério do Trabalho, advogados).
+- O conteúdo textual foi redigido em linguagem simples e adequada para estudantes do 1º ano do Ensino Médio.
